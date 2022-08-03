@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"go-credit-rate-limit-server/pkg/logging"
 	"go-credit-rate-limit-server/pkg/rate"
 	"net/http"
@@ -59,5 +60,8 @@ func main() {
 		v1.GET("/acquire", acquire(limiter))
 	}
 
-	r.Run()
+	err := r.Run()
+	if err != nil {
+		fmt.Println("failed with error:", err.Error())
+	}
 }

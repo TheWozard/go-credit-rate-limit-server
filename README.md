@@ -1,7 +1,7 @@
 # go-credit-rate-limit-server
 [![Test](https://github.com/TheWozard/go-credit-rate-limit-server/actions/workflows/test.yml/badge.svg)](https://github.com/TheWozard/go-credit-rate-limit-server/actions/workflows/test.yml)
 
-A simple api for coordinating rate limiting through an credit based api
+A simple api for coordinating rate limiting through an credit based api. Also an exploration into [Gin](https://github.com/gin-gonic/gin)
 
 # Run Locally
 
